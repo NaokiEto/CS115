@@ -65,7 +65,7 @@ num
 
 --Part A, Problem 6
 sieve :: [Integer] -> [Integer]
-sieve (n:ns) = [n] ++ (filter (\x -> x `mod` n /= 0) ns)
+sieve (n:ns) = n ++ (filter (\x -> x `mod` n /= 0) ns)
 
 
 --Part B, problem 1
